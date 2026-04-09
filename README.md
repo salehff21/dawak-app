@@ -32,29 +32,17 @@ The application is simple, user-friendly, and works completely offline using a l
 
 ## 📸 Screenshots
 
-### 🔐 Login Screen
+<p align="center">
+  <img src="screenshots/login.png" width="200"/>
+  <img src="screenshots/registration.png" width="200"/>
+  <img src="screenshots/dashboard.png" width="200"/>
+</p>
 
-![Login](screenshots/login.png)
-
-### 📝 Register Screen
-
-![Register](screenshots/registration.png)
-
-### 🏠 Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-### 📅 Schedule Screen
-
-![Schedule](screenshots/schedule.png)
-
-### 💊 Medicines Screen
-
-![Medicines](screenshots/medicine.png)
-
-### ℹ️ About Screen
-
-![About](screenshots/about us.png)
+<p align="center">
+  <img src="screenshots/schedule.png" width="200"/>
+  <img src="screenshots/medicine.png" width="200"/>
+  <img src="screenshots/about_us.png" width="200"/>
+</p>
 
 ---
 
@@ -103,10 +91,13 @@ This project was developed as a graduation project to provide a simple and effec
 * Add multi-language support
 * Add medication history tracking
 
+---
+
 ## 👤 Developer
 
 **Saleh Al-Shaebi**
 *Information Technology Graduate | Freelance Developer*
 
 * 🔗 LinkedIn: [Saleh Al-Shaebi](https://www.linkedin.com/in/saleh-al-shaebi-1903263aa)
+
 ---
