@@ -103,4 +103,10 @@ This project was developed as a graduation project to provide a simple and effec
 * Add multi-language support
 * Add medication history tracking
 
+## 👤 Developer
+
+**Saleh Al-Shaebi**
+*Information Technology Graduate | Freelance Developer*
+
+* 🔗 LinkedIn: [Saleh Al-Shaebi](https://www.linkedin.com/in/saleh-al-shaebi-1903263aa)
 ---
