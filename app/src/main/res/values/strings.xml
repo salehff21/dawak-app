@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Dawak</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="create_account">Create Account</string>
+    <string name="email_hint">Email Address</string>
+    <string name="email_placeholder_1">e.g. john@example.com</string>
+    <string name="email_placeholder_2">name@example.com</string>
+    <string name="password_hint">Password</string>
+    <string name="password_placeholder_1">Your secret password</string>
+    <string name="password_placeholder_2">........</string>
+    <string name="forgot_password">Forgot?</string>
+    <string name="login_btn">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="join_guardian">Join your empathetic health guardian.</string>
+    <string name="enter_details">Enter your details to start your journey.</string>
+    <string name="full_name">Full Name</string>
+    <string name="name_placeholder">John Doe</string>
+    <string name="register_btn">Register</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="emp_guardian">Your Empathetic Health Guardian</string>
+    <string name="about_us_text">About Us\n\nDawak helps you stay on track with your medication and supports you on your health journey.</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="stay_healthy">Stay healthy today</string>
+    <string name="meds_title">Medicine</string>
+    <string name="manage_schedule">Manage your daily intake schedule.</string>
+    <string name="todays_schedule">Today\'s Schedule</string>
+    <string name="today_date_placeholder">Monday, Oct 23</string>
+    <string name="new_medication">New Medication</string>
+    <string name="add_treatment">Add a new treatment to your daily routine.</string>
+    <string name="medicine_name_label">MEDICINE NAME</string>
+    <string name="medicine_name_hint">e.g. Lisinopril</string>
+    <string name="dose_strength_label">DOSE STRENGTH</string>
+    <string name="dose_5mg">5\nmg</string>
+    <string name="dose_10mg">10\nmg</string>
+    <string name="dose_20mg">20\nmg</string>
+    <string name="reminder_times_label">REMINDER TIMES</string>
+    <string name="add_time">+ Add Time</string>
+    <string name="time_placeholder">08:00 AM\nMorning dose</string>
+    <string name="additional_notes_label">ADDITIONAL NOTES</string>
+    <string name="notes_hint">e.g. Take with food, avoid grapefruit juice</string>
+    <string name="save_medication">Save Medication</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_meds">Meds</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="app_subtitle">Your smart medicine reminder</string>
+    <string name="nav_about">About</string>
+    <string name="time_conflict_warning">A medicine is already scheduled at this time. Please choose a different time.</string>
+    <string name="medicine_added_success">Medicine added successfully.</string>
+    <string name="fill_empty_fields">Please fill all fields.</string>
+
+    <string name="daily_adherence">Daily Adherence</string>
+    <string name="today_schedule">Today\'s Schedule</string>
+    <string name="refill_needed">Refill Needed</string>
+    <string name="days_remaining">Only %1$d days remaining</string>
+    <string name="refill">Refill</string>
+    <string name="health_tip_title">Daily Health Tip</string>
+    <string name="health_tip_text" translatable="false">Stay hydrated! Drinking water helps your kidneys process medications efficiently.</string>
+
+    <string name="log_dose">Log Dose</string>
+    <string name="taken">Taken</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+</resources>

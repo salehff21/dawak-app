@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/card_bg"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textColor="@color/textColorPrimary"
+            android:fontFamily="@font/cairo_medium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMedicineTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="08:00 AM"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo_medium"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="14sp" />
+            
+        <TextView
+            android:id="@+id/tvMedicineDose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 mg"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo_medium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMedicineStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taken"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/chip_selected"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/cairo_medium"
+        android:textStyle="bold"
+        android:textAppearance="@style/CairoMediumStyle"/>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="Red">#F20050</color>
+    <color name="black">#000000</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="colorAccent">#818CF8</color>
+    <color name="colorBackground">#F9FAFB</color>
+    <color name="colorError">#EF4444</color>
+    <color name="colorErrorLight">#FEE2E2</color>
+    <color name="colorPrimary">#4F46E5</color>
+    <color name="colorPrimaryDark">#3730A3</color>
+    <color name="colorSuccess">#10B981</color>
+    <color name="colorSuccessLight">#D1FAE5</color>
+    <color name="inputBackground">#E5E7EB</color>
+    <color name="textColorPrimary">#1F2937</color>
+    <color name="textColorSecondary">#6B7280</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <string name="about_us_text">About Us\n\nDawak helps you stay on track with your medication and supports you on your health journey.</string>
+    <string name="add_time">+ Add Time</string>
+    <string name="add_treatment">Add a new treatment to your daily routine.</string>
+    <string name="additional_notes_label">ADDITIONAL NOTES</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="app_name">Dawak</string>
+    <string name="app_subtitle">Your smart medicine reminder</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="daily_adherence">Daily Adherence</string>
+    <string name="days_remaining">Only %1$d days remaining</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="dose_10mg">10\nmg</string>
+    <string name="dose_20mg">20\nmg</string>
+    <string name="dose_5mg">5\nmg</string>
+    <string name="dose_strength_label">DOSE STRENGTH</string>
+    <string name="email_hint">Email Address</string>
+    <string name="email_placeholder_1">e.g. john@example.com</string>
+    <string name="email_placeholder_2">name@example.com</string>
+    <string name="emp_guardian">Your Empathetic Health Guardian</string>
+    <string name="enter_details">Enter your details to start your journey.</string>
+    <string name="fill_empty_fields">Please fill all fields.</string>
+    <string name="forgot_password">Forgot?</string>
+    <string name="full_name">Full Name</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="health_tip_text" translatable="false">Stay hydrated! Drinking water helps your kidneys process medications efficiently.</string>
+    <string name="health_tip_title">Daily Health Tip</string>
+    <string name="join_guardian">Join your empathetic health guardian.</string>
+    <string name="log_dose">Log Dose</string>
+    <string name="login">Login</string>
+    <string name="login_btn">Login</string>
+    <string name="manage_schedule">Manage your daily intake schedule.</string>
+    <string name="medicine_added_success">Medicine added successfully.</string>
+    <string name="medicine_name_hint">e.g. Lisinopril</string>
+    <string name="medicine_name_label">MEDICINE NAME</string>
+    <string name="meds_title">Medicine</string>
+    <string name="name_placeholder">John Doe</string>
+    <string name="nav_about">About</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_meds">Meds</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="new_medication">New Medication</string>
+    <string name="notes_hint">e.g. Take with food, avoid grapefruit juice</string>
+    <string name="password_hint">Password</string>
+    <string name="password_placeholder_1">Your secret password</string>
+    <string name="password_placeholder_2">........</string>
+    <string name="refill">Refill</string>
+    <string name="refill_needed">Refill Needed</string>
+    <string name="register">Register</string>
+    <string name="register_btn">Register</string>
+    <string name="reminder_times_label">REMINDER TIMES</string>
+    <string name="save_medication">Save Medication</string>
+    <string name="stay_healthy">Stay healthy today</string>
+    <string name="taken">Taken</string>
+    <string name="time_conflict_warning">A medicine is already scheduled at this time. Please choose a different time.</string>
+    <string name="time_placeholder">08:00 AM\nMorning dose</string>
+    <string name="today_date_placeholder">Monday, Oct 23</string>
+    <string name="today_schedule">Today\'s Schedule</string>
+    <string name="todays_schedule">Today\'s Schedule</string>
+    <string name="welcome_back">Welcome Back</string>
+    <style name="BottomNavTextStyle">
+        <item name="android:fontFamily">@font/cairo_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CairoMediumStyle">
+        <item name="android:fontFamily">@font/cairo_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.Dawak" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+    </style>
+</resources>

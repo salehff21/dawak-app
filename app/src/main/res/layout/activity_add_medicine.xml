@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="@color/textColorSecondary" />
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_medication"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/add_treatment"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="14sp" />
+
+        <!-- Medicine Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medicine_name_label"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/medicine_name_hint"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- Dose Strength -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dose_strength_label"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+            
+            <!-- Replace these with actual ChipGroup if MaterialComponents are fully used later -->
+            <TextView
+                android:id="@+id/tvDose5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/chip_selected"
+                android:gravity="center"
+                android:text="@string/dose_5mg"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+                
+            <TextView
+                android:id="@+id/tvDose10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/chip_unselected"
+                android:gravity="center"
+                android:text="@string/dose_10mg"
+                android:textColor="@color/textColorSecondary"
+                android:layout_marginEnd="8dp"/>
+                
+            <TextView
+                android:id="@+id/tvDose20"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/chip_unselected"
+                android:gravity="center"
+                android:text="@string/dose_20mg"
+                android:textColor="@color/textColorSecondary" />
+        </LinearLayout>
+
+        <!-- Reminder Times -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reminder_times_label"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/btnAddTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </RelativeLayout>
+
+        <!-- Placeholders for selected times -->
+        <LinearLayout
+            android:id="@+id/llTimesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+        </LinearLayout>
+        
+        <!-- Notes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/additional_notes_label"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="top|start"
+            android:hint="@string/notes_hint"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnSaveMedication"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/save_medication"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="BottomNavTextStyle">
+        <item name="android:fontFamily">@font/cairo_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CairoMediumStyle">
+        <item name="android:fontFamily">@font/cairo_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

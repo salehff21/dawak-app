@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Row: Greeting & Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/good_morning"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cairo_medium"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDateDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stay_healthy"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cairo_medium"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chip_selected"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:layout_marginEnd="12dp">
+
+                <TextView
+                    android:id="@+id/tvCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08:45 AM"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnLanguageSwitch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="EN"
+                android:gravity="center"
+                android:background="@drawable/chip_selected"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Adherence Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_adherence"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="bold"
+                android:fontFamily="@font/cairo_medium"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvAdherenceProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You've taken 0 of 0 doses today"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cairo_medium"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarAdherence"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/colorPrimary"
+                android:progressBackgroundTint="#E0E0E0" />
+        </LinearLayout>
+
+        <!-- Today's Schedule -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_schedule"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo_medium"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDashboardMeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo_medium"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Low Stock Alert -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refill_needed"
+            android:textColor="@color/textColorPrimary"
+            android:fontFamily="@font/cairo_medium"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip_selected"
+            android:backgroundTint="#FFF3E0"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_alert"
+                app:tint="#FF9800"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aspirin"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/days_remaining"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cairo_medium"
+                    android:textColor="#FF9800"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refill"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/cairo_medium"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Health Tip Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="80dp"> <!-- Spaced for FAB -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_tip_title"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="bold"
+                android:fontFamily="@font/cairo_medium"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_tip_text"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cairo_medium"/>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="@color/colorPrimary"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
